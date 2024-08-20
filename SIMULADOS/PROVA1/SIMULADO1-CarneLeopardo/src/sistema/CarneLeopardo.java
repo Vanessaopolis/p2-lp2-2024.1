@@ -76,8 +76,7 @@ public class CarneLeopardo {
 	public String atribuirTributoAoContribuinte(int codigoTributo, String cpf) {
 		if (tributos.containsKey(codigoTributo) && contribuintes.containsKey(cpf)) {
 			Tributo tributo = tributos.get(codigoTributo);
-			contribuintes.get(cpf).atribuirTributo(tributo);
-			tributos.remove(codigoTributo);
+			contribuintes.get(cpf).atribuirTributo(new Tributo(tributo));
 			return "| TRIBUTO ADICIONADO COM SUCESSO |";
 		}
 		return "| TRIBUTO OU CONTRIBUINTE NÃO ENCONTRADO |";

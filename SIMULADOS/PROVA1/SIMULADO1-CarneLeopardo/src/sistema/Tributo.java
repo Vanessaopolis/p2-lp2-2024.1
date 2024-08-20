@@ -17,6 +17,14 @@ public class Tributo {
 		this.pago = false;
 	}
 	
+	public Tributo(Tributo tributo) {
+		this.codigo = tributo.codigo;
+		this.descricao = tributo.descricao;
+		this.valor = tributo.valor;
+		this.ano = tributo.ano;
+		this.pago = tributo.pago;
+	}
+	
 	public int getCodigo() {
 		return codigo;
 	}
