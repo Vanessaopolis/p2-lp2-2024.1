@@ -17,7 +17,6 @@ public class TotalPagoEmTributosTest {
 		tributo3 = new Tributo(3, "tributo3", 44, 2020);
 		tributo4 = new Tributo(4, "tributo4", 17, 2022);
 		
-		// atribui os tributos para o contribuinte
 		contribuinte.atribuirTributo(tributo1);
 		contribuinte.atribuirTributo(tributo2);
 		contribuinte.atribuirTributo(tributo3);
